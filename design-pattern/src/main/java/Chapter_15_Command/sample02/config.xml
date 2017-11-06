@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<config>
+    <className>Chapter_15_Command.sample02.HelpCommand</className>
+    <className>Chapter_15_Command.sample02.MinimizeCommand</className>
+</config>
