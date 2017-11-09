@@ -8,6 +8,13 @@
     <artifactId>design-pattern</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.33</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <resources>
