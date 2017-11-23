@@ -1,6 +1,6 @@
 package Chapter_21_State.sample03;
 
-//³éÏó×´Ì¬Àà
+//æŠ½è±¡çŠ¶æ€ç±»
 abstract class AccountState {
     protected Account acc;
 

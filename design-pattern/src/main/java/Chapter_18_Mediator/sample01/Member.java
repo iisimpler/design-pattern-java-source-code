@@ -29,10 +29,10 @@ public abstract class Member {
     public abstract void sendImage(String to, String image);
 
     public void receiveText(String from, String message) {
-        System.out.println(from + "·¢ËÍÎÄ±¾¸ø" + this.name + "£¬ÄÚÈİÎª£º" + message);
+        System.out.println(from + "å‘é€æ–‡æœ¬ç»™" + this.name + "ï¼Œå†…å®¹ä¸ºï¼š" + message);
     }
 
     public void receiveImage(String from, String image) {
-        System.out.println(from + "·¢ËÍÍ¼Æ¬¸ø" + this.name + "£¬ÄÚÈİÎª£º" + image);
+        System.out.println(from + "å‘é€å›¾ç‰‡ç»™" + this.name + "ï¼Œå†…å®¹ä¸ºï¼š" + image);
     }
 }

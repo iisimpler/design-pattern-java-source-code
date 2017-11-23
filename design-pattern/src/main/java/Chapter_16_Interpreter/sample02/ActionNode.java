@@ -1,6 +1,6 @@
 package Chapter_16_Interpreter.sample02;
 
-//¶¯×÷½âÊÍ£ºÖÕ½á·û±í´ïÊ½
+//åŠ¨ä½œè§£é‡Šï¼šç»ˆç»“ç¬¦è¡¨è¾¾å¼
 class ActionNode extends AbstractNode {  
     private String action;  
 
@@ -8,16 +8,16 @@ class ActionNode extends AbstractNode {
         this.action = action;  
     }  
 
-    //¶¯×÷£¨ÒÆ¶¯·½Ê½£©±í´ïÊ½µÄ½âÊÍ²Ù×÷  
+    //åŠ¨ä½œï¼ˆç§»åŠ¨æ–¹å¼ï¼‰è¡¨è¾¾å¼çš„è§£é‡Šæ“ä½œ  
     public String interpret() {  
         if (action.equalsIgnoreCase("move")) {  
-            return "ÒÆ¶¯";  
+            return "ç§»åŠ¨";  
         }  
         else if (action.equalsIgnoreCase("run")) {  
-            return "¿ìËÙÒÆ¶¯";  
+            return "å¿«é€Ÿç§»åŠ¨";  
         }  
         else {  
-            return "ÎŞĞ§Ö¸Áî";  
+            return "æ— æ•ˆæŒ‡ä»¤";  
         }  
     }  
 }  

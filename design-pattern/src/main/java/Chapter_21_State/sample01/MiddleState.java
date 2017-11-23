@@ -4,21 +4,21 @@ public class MiddleState extends AbstractState {
     public MiddleState(AbstractState state) {
         this.acc = state.acc;
         this.point = state.getPoint();
-        this.stateName = "¸ßÊÖ";
+        this.stateName = "é«˜æ‰‹";
     }
 
     public void writeNote(int score) {
-        System.out.println(acc.getName() + "·¢²¼ÁôÑÔ" + "£¬Ôö¼Ó" + score + "*2¸ö»ý·Ö¡£");
+        System.out.println(acc.getName() + "å‘å¸ƒç•™è¨€" + "ï¼Œå¢žåŠ " + score + "*2ä¸ªç§¯åˆ†ã€‚");
         this.point += score * 2;
         checkState(score);
-        System.out.println("Ê£Óà»ý·ÖÎª£º" + this.point + "£¬µ±Ç°¼¶±ðÎª£º" + acc.getState().stateName + "¡£");
+        System.out.println("å‰©ä½™ç§¯åˆ†ä¸ºï¼š" + this.point + "ï¼Œå½“å‰çº§åˆ«ä¸ºï¼š" + acc.getState().stateName + "ã€‚");
     }
 
     public void checkState(int score) {
         if (point >= 1000) {
             acc.setState(new HighState(this));
         } else if (point < 0) {
-            System.out.println("Óà¶î²»×ã£¬ÎÄ¼þÏÂÔØÊ§°Ü£¡");
+            System.out.println("ä½™é¢ä¸è¶³ï¼Œæ–‡ä»¶ä¸‹è½½å¤±è´¥ï¼");
             this.point += score;
         } else if (point <= 100) {
             acc.setState(new PrimaryState(this));

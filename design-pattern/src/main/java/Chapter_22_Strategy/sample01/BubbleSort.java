@@ -18,7 +18,7 @@ public class BubbleSort implements Sort
               }             
            }
 		}
-		System.out.println("Ã°ÅİÅÅĞò");
+		System.out.println("å†’æ³¡æ’åº");
 		return arr;
 	}
 }

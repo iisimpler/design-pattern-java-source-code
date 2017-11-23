@@ -1,6 +1,6 @@
 package Chapter_18_Mediator.sample02;
 
-//³éÏó×é¼şÀà£º³éÏóÍ¬ÊÂÀà
+//æŠ½è±¡ç»„ä»¶ç±»ï¼šæŠ½è±¡åŒäº‹ç±»
 abstract class Component {
     protected Mediator mediator;
 
@@ -8,7 +8,7 @@ abstract class Component {
         this.mediator = mediator;
     }
 
-    //×ª·¢µ÷ÓÃ  
+    //è½¬å‘è°ƒç”¨  
     public void changed() {
         mediator.componentChanged(this);
     }

@@ -10,7 +10,7 @@ public class Director extends Leader
 	{
 		if(request.getLeaveDays()<3)
 		{
-			System.out.println("Ö÷ÈÎ" + name + "ÉóÅúÔ±¹¤" + request.getLeaveName() + "µÄÇë¼ÙÌõ£¬Çë¼ÙÌìÊýÎª" + request.getLeaveDays() + "Ìì¡£");
+			System.out.println("ä¸»ä»»" + name + "å®¡æ‰¹å‘˜å·¥" + request.getLeaveName() + "çš„è¯·å‡æ¡ï¼Œè¯·å‡å¤©æ•°ä¸º" + request.getLeaveDays() + "å¤©ã€‚");
 		}
 		else
 		{

@@ -1,6 +1,6 @@
 package Chapter_16_Interpreter.sample02;
 
-//·½Ïò½âÊÍ£ºÖÕ½á·û±í´ïÊ½
+//æ–¹å‘è§£é‡Šï¼šç»ˆç»“ç¬¦è¡¨è¾¾å¼
 class DirectionNode extends AbstractNode {  
     private String direction;  
 
@@ -8,22 +8,22 @@ class DirectionNode extends AbstractNode {
         this.direction = direction;  
     }  
 
-    //·½Ïò±í´ïÊ½µÄ½âÊÍ²Ù×÷  
+    //æ–¹å‘è¡¨è¾¾å¼çš„è§£é‡Šæ“ä½œ  
     public String interpret() {  
         if (direction.equalsIgnoreCase("up")) {  
-            return "ÏòÉÏ";  
+            return "å‘ä¸Š";  
         }  
         else if (direction.equalsIgnoreCase("down")) {  
-            return "ÏòÏÂ";  
+            return "å‘ä¸‹";  
         }  
         else if (direction.equalsIgnoreCase("left")) {  
-            return "Ïò×ó";  
+            return "å‘å·¦";  
         }  
         else if (direction.equalsIgnoreCase("right")) {  
-            return "ÏòÓÒ";  
+            return "å‘å³";  
         }  
         else {  
-            return "ÎŞĞ§Ö¸Áî";  
+            return "æ— æ•ˆæŒ‡ä»¤";  
         }  
     }  
 }  

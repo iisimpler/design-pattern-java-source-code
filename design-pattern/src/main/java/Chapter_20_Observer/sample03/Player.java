@@ -1,6 +1,6 @@
 package Chapter_20_Observer.sample03;
 
-//Õ½¶Ó³ÉÔ±Àà£º¾ßÌå¹Û²ìÕßÀà
+//æˆ˜é˜Ÿæˆå‘˜ç±»ï¼šå…·ä½“è§‚å¯Ÿè€…ç±»
 class Player implements Observer {
     private String name;
 
@@ -16,14 +16,14 @@ class Player implements Observer {
         this.name = name;
     }
 
-    //Ö§Ô®ÃËÓÑ·½·¨µÄÊµÏÖ  
+    //æ”¯æ´ç›Ÿå‹æ–¹æ³•çš„å®ç°  
     public void help() {
-        System.out.println("¼á³Ö×¡£¬" + this.name + "À´¾ÈÄã£¡");
+        System.out.println("åšæŒä½ï¼Œ" + this.name + "æ¥æ•‘ä½ ï¼");
     }
 
-    //ÔâÊÜ¹¥»÷·½·¨µÄÊµÏÖ£¬µ±ÔâÊÜ¹¥»÷Ê±½«µ÷ÓÃÕ½¶Ó¿ØÖÆÖĞĞÄÀàµÄÍ¨Öª·½·¨notifyObserver()À´Í¨ÖªÃËÓÑ  
+    //é­å—æ”»å‡»æ–¹æ³•çš„å®ç°ï¼Œå½“é­å—æ”»å‡»æ—¶å°†è°ƒç”¨æˆ˜é˜Ÿæ§åˆ¶ä¸­å¿ƒç±»çš„é€šçŸ¥æ–¹æ³•notifyObserver()æ¥é€šçŸ¥ç›Ÿå‹  
     public void beAttacked(AllyControlCenter acc) {
-        System.out.println(this.name + "±»¹¥»÷£¡");
+        System.out.println(this.name + "è¢«æ”»å‡»ï¼");
         acc.notifyObserver(name);
     }
 }  

@@ -4,11 +4,11 @@ public class Dog
 {
 	public void wang()
 	{
-		System.out.println("¹·ÍôÍô½Ğ£¡");
+		System.out.println("ç‹—æ±ªæ±ªå«ï¼");
 	}
 	
 	public void run()
 	{
-		System.out.println("¹·¿ì¿ìÅÜ£¡");
+		System.out.println("ç‹—å¿«å¿«è·‘ï¼");
 	}
 }

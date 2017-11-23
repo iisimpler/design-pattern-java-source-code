@@ -1,11 +1,11 @@
 package Chapter_10_Decorator.sample03;
 
-//¹¹¼ş×°ÊÎÀà£º³éÏó×°ÊÎÀà
+//æ„ä»¶è£…é¥°ç±»ï¼šæŠ½è±¡è£…é¥°ç±»
 public class ComponentDecorator extends Component
 {
-       private Component component;  //Î¬³Ö¶Ô³éÏó¹¹¼şÀàĞÍ¶ÔÏóµÄÒıÓÃ
+       private Component component;  //ç»´æŒå¯¹æŠ½è±¡æ„ä»¶ç±»å‹å¯¹è±¡çš„å¼•ç”¨
 
-       public ComponentDecorator(Component  component)  //×¢Èë³éÏó¹¹¼şÀàĞÍµÄ¶ÔÏó
+       public ComponentDecorator(Component  component)  //æ³¨å…¥æŠ½è±¡æ„ä»¶ç±»å‹çš„å¯¹è±¡
        {
               this.component = component;
        }

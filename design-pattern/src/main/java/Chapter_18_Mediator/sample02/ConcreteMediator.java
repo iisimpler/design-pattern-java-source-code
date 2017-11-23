@@ -1,31 +1,31 @@
 package Chapter_18_Mediator.sample02;
 
-//¾ßÌåÖĞ½éÕß
+//å…·ä½“ä¸­ä»‹è€…
 class ConcreteMediator extends Mediator {
-    //Î¬³Ö¶Ô¸÷¸öÍ¬ÊÂ¶ÔÏóµÄÒıÓÃ  
+    //ç»´æŒå¯¹å„ä¸ªåŒäº‹å¯¹è±¡çš„å¼•ç”¨  
     public Button addButton;
     public List list;
     public TextBox userNameTextBox;
     public ComboBox cb;
 
-    //·â×°Í¬ÊÂ¶ÔÏóÖ®¼äµÄ½»»¥  
+    //å°è£…åŒäº‹å¯¹è±¡ä¹‹é—´çš„äº¤äº’  
     public void componentChanged(Component c) {
-        //µ¥»÷°´Å¥  
+        //å•å‡»æŒ‰é’®  
         if (c == addButton) {
-            System.out.println("--µ¥»÷Ôö¼Ó°´Å¥--");
+            System.out.println("--å•å‡»å¢åŠ æŒ‰é’®--");
             list.update();
             cb.update();
             userNameTextBox.update();
         }
-        //´ÓÁĞ±í¿òÑ¡Ôñ¿Í»§  
+        //ä»åˆ—è¡¨æ¡†é€‰æ‹©å®¢æˆ·  
         else if (c == list) {
-            System.out.println("--´ÓÁĞ±í¿òÑ¡Ôñ¿Í»§--");
+            System.out.println("--ä»åˆ—è¡¨æ¡†é€‰æ‹©å®¢æˆ·--");
             cb.select();
             userNameTextBox.setText();
         }
-        //´Ó×éºÏ¿òÑ¡Ôñ¿Í»§  
+        //ä»ç»„åˆæ¡†é€‰æ‹©å®¢æˆ·  
         else if (c == cb) {
-            System.out.println("--´Ó×éºÏ¿òÑ¡Ôñ¿Í»§--");
+            System.out.println("--ä»ç»„åˆæ¡†é€‰æ‹©å®¢æˆ·--");
             cb.select();
             userNameTextBox.setText();
         }

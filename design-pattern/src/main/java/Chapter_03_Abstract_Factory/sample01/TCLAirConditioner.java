@@ -2,6 +2,6 @@ package Chapter_03_Abstract_Factory.sample01;
 
 public class TCLAirConditioner implements AirConditioner {
     public void changeTemperature() {
-        System.out.println("TCL¿Õµ÷ÎÂ¶È¸Ä±äÖĞ......");
+        System.out.println("TCLç©ºè°ƒæ¸©åº¦æ”¹å˜ä¸­......");
     }
 }

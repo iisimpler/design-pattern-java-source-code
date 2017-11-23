@@ -5,15 +5,15 @@ abstract class DBOperator
 	public abstract void connDB();
     public void openDB()
 	{
-		System.out.println("´ò¿ªÊı¾İ¿â");
+		System.out.println("æ‰“å¼€æ•°æ®åº“");
 	}
 	public void useDB()
 	{
-		System.out.println("Ê¹ÓÃÊı¾İ¿â");
+		System.out.println("ä½¿ç”¨æ•°æ®åº“");
 	}
 	public void closeDB()
 	{
-		System.out.println("¹Ø±ÕÊı¾İ¿â");	
+		System.out.println("å…³é—­æ•°æ®åº“");	
 	}
    public void process()
    {
@@ -28,7 +28,7 @@ class DBOperatorSubA extends DBOperator
 {
 	public void connDB()
 	{
-		System.out.println("Ê¹ÓÃJDBC-ODBCÇÅ½ÓÁ¬½ÓÊı¾İ¿â");		
+		System.out.println("ä½¿ç”¨JDBC-ODBCæ¡¥æ¥è¿æ¥æ•°æ®åº“");		
 	}
 }
 
@@ -36,7 +36,7 @@ class DBOperatorSubB extends DBOperator
 {
 	public void connDB()
 	{
-		System.out.println("Ê¹ÓÃÁ¬½Ó³ØÁ¬½ÓÊı¾İ¿â");		
+		System.out.println("ä½¿ç”¨è¿æ¥æ± è¿æ¥æ•°æ®åº“");		
 	}
 }
 

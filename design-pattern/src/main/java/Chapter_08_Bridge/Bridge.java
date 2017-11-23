@@ -9,7 +9,7 @@ class ConcreteImplementor implements Implementor
 {
 	public void operationImpl()
 	{
-		//具体实现
+		//鍏蜂綋瀹炵幇
 	}
 }
 
@@ -29,8 +29,8 @@ class RefinedAbstraction extends Abstraction
 {
 	public void operation()
 	{
-		//代码
+		//浠ｇ爜
 		impl.operationImpl();
-		//代码
+		//浠ｇ爜
 	}
 }

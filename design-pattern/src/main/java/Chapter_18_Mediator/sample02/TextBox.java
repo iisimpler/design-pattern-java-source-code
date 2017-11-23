@@ -1,12 +1,12 @@
 package Chapter_18_Mediator.sample02;
 
-//ÎÄ±¾¿òÀà£º¾ßÌåÍ¬ÊÂÀà
+//æ–‡æœ¬æ¡†ç±»ï¼šå…·ä½“åŒäº‹ç±»
 class TextBox extends Component {
     public void update() {
-        System.out.println("¿Í»§ĞÅÏ¢Ôö¼Ó³É¹¦ºóÎÄ±¾¿òÇå¿Õ¡£");
+        System.out.println("å®¢æˆ·ä¿¡æ¯å¢åŠ æˆåŠŸåæ–‡æœ¬æ¡†æ¸…ç©ºã€‚");
     }
 
     public void setText() {
-        System.out.println("ÎÄ±¾¿òÏÔÊ¾£ºĞ¡ÁúÅ®¡£");
+        System.out.println("æ–‡æœ¬æ¡†æ˜¾ç¤ºï¼šå°é¾™å¥³ã€‚");
     }
 }

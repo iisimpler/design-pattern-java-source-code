@@ -1,6 +1,6 @@
 package Chapter_16_Interpreter.sample02;
 
-//¼òµ¥¾ä×Ó½âÊÍ£º·ÇÖÕ½á·û±í´ïÊ½
+//ç®€å•å¥å­è§£é‡Šï¼šéç»ˆç»“ç¬¦è¡¨è¾¾å¼
 class SentenceNode extends AbstractNode {  
     private AbstractNode direction;  
     private AbstractNode action;  
@@ -12,7 +12,7 @@ class SentenceNode extends AbstractNode {
         this.distance = distance;  
     }  
 
-    //¼òµ¥¾ä×ÓµÄ½âÊÍ²Ù×÷  
+    //ç®€å•å¥å­çš„è§£é‡Šæ“ä½œ  
     public String interpret() {  
         return direction.interpret() + action.interpret() + distance.interpret();  
     }     

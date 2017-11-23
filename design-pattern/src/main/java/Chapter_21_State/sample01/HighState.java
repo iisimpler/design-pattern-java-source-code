@@ -4,26 +4,26 @@ public class HighState extends AbstractState {
     public HighState(AbstractState state) {
         this.acc = state.acc;
         this.point = state.getPoint();
-        this.stateName = "×¨¼Ò";
+        this.stateName = "ä¸“å®¶";
     }
 
     public void writeNote(int score) {
-        System.out.println(acc.getName() + "·¢²¼ÁôÑÔ" + "£¬Ôö¼Ó" + score + "*2¸ö»ı·Ö¡£");
+        System.out.println(acc.getName() + "å‘å¸ƒç•™è¨€" + "ï¼Œå¢åŠ " + score + "*2ä¸ªç§¯åˆ†ã€‚");
         this.point += score * 2;
         checkState(score);
-        System.out.println("Ê£Óà»ı·ÖÎª£º" + this.point + "£¬µ±Ç°¼¶±ğÎª£º" + acc.getState().stateName + "¡£");
+        System.out.println("å‰©ä½™ç§¯åˆ†ä¸ºï¼š" + this.point + "ï¼Œå½“å‰çº§åˆ«ä¸ºï¼š" + acc.getState().stateName + "ã€‚");
     }
 
     public void downloadFile(int score) {
-        System.out.println(acc.getName() + "ÏÂÔØÎÄ¼ş£¬¿Û³ı" + score + "/2»ı·Ö¡£");
+        System.out.println(acc.getName() + "ä¸‹è½½æ–‡ä»¶ï¼Œæ‰£é™¤" + score + "/2ç§¯åˆ†ã€‚");
         this.point -= score / 2;
         checkState(score);
-        System.out.println("Ê£Óà»ı·ÖÎª£º" + this.point + "£¬µ±Ç°¼¶±ğÎª£º" + acc.getState().stateName + "¡£");
+        System.out.println("å‰©ä½™ç§¯åˆ†ä¸ºï¼š" + this.point + "ï¼Œå½“å‰çº§åˆ«ä¸ºï¼š" + acc.getState().stateName + "ã€‚");
     }
 
     public void checkState(int score) {
         if (point < 0) {
-            System.out.println("Óà¶î²»×ã£¬ÎÄ¼şÏÂÔØÊ§°Ü£¡");
+            System.out.println("ä½™é¢ä¸è¶³ï¼Œæ–‡ä»¶ä¸‹è½½å¤±è´¥ï¼");
             this.point += score;
         } else if (point <= 100) {
             acc.setState(new PrimaryState(this));

@@ -4,8 +4,8 @@ public class Client
 {
 	public static void main(String args[])
 	{
-		String password="sunnyLiu";  //Ã÷ÎÄ
-		String cpassword;       //ÃÜÎÄ
+		String password="sunnyLiu";  //æ˜æ–‡
+		String cpassword;       //å¯†æ–‡
 		Cipher sc,ac,cc;
 		
 		sc=new SimpleCipher();

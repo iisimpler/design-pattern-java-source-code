@@ -10,7 +10,7 @@ public class ViceGeneralManager extends Leader
 	{
 		if(request.getLeaveDays()<20)
 		{
-			System.out.println("¸±×Ü¾­Àí" + name + "ÉóÅúÔ±¹¤" + request.getLeaveName() + "µÄÇë¼ÙÌõ£¬Çë¼ÙÌìÊýÎª" + request.getLeaveDays() + "Ìì¡£");
+			System.out.println("å‰¯æ€»ç»ç†" + name + "å®¡æ‰¹å‘˜å·¥" + request.getLeaveName() + "çš„è¯·å‡æ¡ï¼Œè¯·å‡å¤©æ•°ä¸º" + request.getLeaveDays() + "å¤©ã€‚");
 		}
 		else
 		{

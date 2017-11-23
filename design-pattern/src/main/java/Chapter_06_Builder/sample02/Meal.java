@@ -2,7 +2,7 @@ package Chapter_06_Builder.sample02;
 
 public class Meal
 {
-	//foodºÍdrinkÊÇ²¿¼þ
+	//foodå’Œdrinkæ˜¯éƒ¨ä»¶
 	private String food;
 	private String drink;
 	

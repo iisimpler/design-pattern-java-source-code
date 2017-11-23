@@ -4,11 +4,11 @@ public class Saler extends Visitor
 {
 	public void visit(Apple apple)
 	{
-		System.out.println("ÊÕÒøÔ±" + name + "¸øÆ»¹û¹ı³Ó£¬È»ºó¼ÆËãÆä¼Û¸ñ¡£");
+		System.out.println("æ”¶é“¶å‘˜" + name + "ç»™è‹¹æœè¿‡ç§¤ï¼Œç„¶åè®¡ç®—å…¶ä»·æ ¼ã€‚");
 	}
 	
 	public void visit(Book book)
 	{
-		System.out.println("ÊÕÒøÔ±" + name + "Ö±½Ó¼ÆËãÊéµÄ¼Û¸ñ¡£");
+		System.out.println("æ”¶é“¶å‘˜" + name + "ç›´æ¥è®¡ç®—ä¹¦çš„ä»·æ ¼ã€‚");
 	}
 }

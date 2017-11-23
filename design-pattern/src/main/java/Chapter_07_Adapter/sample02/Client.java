@@ -8,8 +8,8 @@ public class Client
 		dao.setPassword("sunnyLiu");
 		String ps=dao.getPassword();
 		String es=dao.doEncrypt(6,ps);
-		System.out.println("明文为：" + ps);
-		System.out.println("密文为：" + es);
+		System.out.println("鏄庢枃涓猴細" + ps);
+		System.out.println("瀵嗘枃涓猴細" + es);
 	}
 }
 

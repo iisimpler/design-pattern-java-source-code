@@ -4,9 +4,9 @@ class Client
 {
        public  static void main(String[] args)
        {
-              Component component = new Window(); //¶¨Òå¾ßÌå¹¹¼ş
-              Component componentSB = new  ScrollBarDecorator(component); //¶¨Òå×°ÊÎºóµÄ¹¹¼ş
-              Component componentBB = new  BlackBorderDecorator(componentSB); //½«×°ÊÎÁËÒ»´ÎÖ®ºóµÄ¶ÔÏó¼ÌĞø×¢Èëµ½ÁíÒ»¸ö×°ÊÎÀàÖĞ£¬½øĞĞµÚ¶ş´Î×°ÊÎ
+              Component component = new Window(); //å®šä¹‰å…·ä½“æ„ä»¶
+              Component componentSB = new  ScrollBarDecorator(component); //å®šä¹‰è£…é¥°åçš„æ„ä»¶
+              Component componentBB = new  BlackBorderDecorator(componentSB); //å°†è£…é¥°äº†ä¸€æ¬¡ä¹‹åçš„å¯¹è±¡ç»§ç»­æ³¨å…¥åˆ°å¦ä¸€ä¸ªè£…é¥°ç±»ä¸­ï¼Œè¿›è¡Œç¬¬äºŒæ¬¡è£…é¥°
               componentBB.display();
        }
 }

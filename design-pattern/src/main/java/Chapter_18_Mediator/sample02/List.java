@@ -1,12 +1,12 @@
 package Chapter_18_Mediator.sample02;
 
-//ÁĞ±í¿òÀà£º¾ßÌåÍ¬ÊÂÀà
+//åˆ—è¡¨æ¡†ç±»ï¼šå…·ä½“åŒäº‹ç±»
 class List extends Component {
     public void update() {
-        System.out.println("ÁĞ±í¿òÔö¼ÓÒ»Ïî£ºÕÅÎŞ¼É¡£");
+        System.out.println("åˆ—è¡¨æ¡†å¢åŠ ä¸€é¡¹ï¼šå¼ æ— å¿Œã€‚");
     }
 
     public void select() {
-        System.out.println("ÁĞ±í¿òÑ¡ÖĞÏî£ºĞ¡ÁúÅ®¡£");
+        System.out.println("åˆ—è¡¨æ¡†é€‰ä¸­é¡¹ï¼šå°é¾™å¥³ã€‚");
     }
 }  

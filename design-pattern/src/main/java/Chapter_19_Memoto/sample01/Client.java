@@ -10,19 +10,19 @@ public class Client
 	user.setAccount("zhangsan");
 	user.setPassword("123456");
 	user.setTelNo("13000000000");
-	System.out.println("×´Ì¬Ò»£º");
+	System.out.println("çŠ¶æ€ä¸€ï¼š");
 	user.show();
-	c.setMemento(user.saveMemento());//±£´æ±¸ÍüÂ¼
+	c.setMemento(user.saveMemento());//ä¿å­˜å¤‡å¿˜å½•
 	System.out.println("---------------------------");
 
 	user.setPassword("111111");
 	user.setTelNo("13100001111");
-	System.out.println("×´Ì¬¶ş£º");	
+	System.out.println("çŠ¶æ€äºŒï¼š");	
 	user.show();
 	System.out.println("---------------------------");
 		
-	user.restoreMemento(c.getMemento());//´Ó±¸ÍüÂ¼ÖĞ»Ö¸´
-	System.out.println("»Øµ½×´Ì¬Ò»£º");
+	user.restoreMemento(c.getMemento());//ä»å¤‡å¿˜å½•ä¸­æ¢å¤
+	System.out.println("å›åˆ°çŠ¶æ€ä¸€ï¼š");
 	user.show();
     System.out.println("---------------------------");
 	}

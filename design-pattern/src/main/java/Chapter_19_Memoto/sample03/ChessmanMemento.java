@@ -1,6 +1,6 @@
 package Chapter_19_Memoto.sample03;
 
-//象棋棋子备忘录类：备忘录
+//璞℃妫嬪瓙澶囧繕褰曠被锛氬蹇樺綍
 class ChessmanMemento {  
     private String label;  
     private int x;  

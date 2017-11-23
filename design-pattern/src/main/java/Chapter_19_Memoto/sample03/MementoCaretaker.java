@@ -3,7 +3,7 @@ package Chapter_19_Memoto.sample03;
 import java.util.ArrayList;
 
 class MementoCaretaker {
-    //¶¨ÒåÒ»¸ö¼¯ºÏÀ´´æ´¢¶à¸ö±¸ÍüÂ¼  
+    //å®šä¹‰ä¸€ä¸ªé›†åˆæ¥å­˜å‚¨å¤šä¸ªå¤‡å¿˜å½•  
     private ArrayList mementolist = new ArrayList();
 
     public ChessmanMemento getMemento(int i) {  

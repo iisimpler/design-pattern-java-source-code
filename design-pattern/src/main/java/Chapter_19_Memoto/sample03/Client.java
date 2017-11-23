@@ -1,11 +1,11 @@
 package Chapter_19_Memoto.sample03;
 
 class Client {
-private static int index = -1; //¶¨ÒåÒ»¸öË÷ÒıÀ´¼ÇÂ¼µ±Ç°×´Ì¬ËùÔÚÎ»ÖÃ  
+private static int index = -1; //å®šä¹‰ä¸€ä¸ªç´¢å¼•æ¥è®°å½•å½“å‰çŠ¶æ€æ‰€åœ¨ä½ç½®  
     private static MementoCaretaker mc = new MementoCaretaker();  
 
     public static void main(String args[]) {  
-        Chessman chess = new Chessman("³µ",1,1);  
+        Chessman chess = new Chessman("è½¦",1,1);  
         play(chess);          
         chess.setY(4);  
         play(chess);  
@@ -17,26 +17,26 @@ private static int index = -1; //¶¨ÒåÒ»¸öË÷ÒıÀ´¼ÇÂ¼µ±Ç°×´Ì¬ËùÔÚÎ»ÖÃ
         redo(chess,index);  
     }  
 
-    //ÏÂÆå  
+    //ä¸‹æ£‹  
     public static void play(Chessman chess) {  
-        mc.setMemento(chess.save()); //±£´æ±¸ÍüÂ¼  
+        mc.setMemento(chess.save()); //ä¿å­˜å¤‡å¿˜å½•  
         index ++;   
-        System.out.println("Æå×Ó" + chess.getLabel() + "µ±Ç°Î»ÖÃÎª£º" + "µÚ" + chess.getX() + "ĞĞ" + "µÚ" + chess.getY() + "ÁĞ¡£");  
+        System.out.println("æ£‹å­" + chess.getLabel() + "å½“å‰ä½ç½®ä¸ºï¼š" + "ç¬¬" + chess.getX() + "è¡Œ" + "ç¬¬" + chess.getY() + "åˆ—ã€‚");  
     }  
 
-    //»ÚÆå  
+    //æ‚”æ£‹  
     public static void undo(Chessman chess,int i) {  
-        System.out.println("******»ÚÆå******");  
+        System.out.println("******æ‚”æ£‹******");  
         index --;   
-        chess.restore(mc.getMemento(i-1)); //³·Ïúµ½ÉÏÒ»¸ö±¸ÍüÂ¼  
-        System.out.println("Æå×Ó" + chess.getLabel() + "µ±Ç°Î»ÖÃÎª£º" + "µÚ" + chess.getX() + "ĞĞ" + "µÚ" + chess.getY() + "ÁĞ¡£");  
+        chess.restore(mc.getMemento(i-1)); //æ’¤é”€åˆ°ä¸Šä¸€ä¸ªå¤‡å¿˜å½•  
+        System.out.println("æ£‹å­" + chess.getLabel() + "å½“å‰ä½ç½®ä¸ºï¼š" + "ç¬¬" + chess.getX() + "è¡Œ" + "ç¬¬" + chess.getY() + "åˆ—ã€‚");  
     }  
 
-    //³·Ïú»ÚÆå  
+    //æ’¤é”€æ‚”æ£‹  
     public static void redo(Chessman chess,int i) {  
-        System.out.println("******³·Ïú»ÚÆå******");   
+        System.out.println("******æ’¤é”€æ‚”æ£‹******");   
         index ++;   
-        chess.restore(mc.getMemento(i+1)); //»Ö¸´µ½ÏÂÒ»¸ö±¸ÍüÂ¼  
-        System.out.println("Æå×Ó" + chess.getLabel() + "µ±Ç°Î»ÖÃÎª£º" + "µÚ" + chess.getX() + "ĞĞ" + "µÚ" + chess.getY() + "ÁĞ¡£");  
+        chess.restore(mc.getMemento(i+1)); //æ¢å¤åˆ°ä¸‹ä¸€ä¸ªå¤‡å¿˜å½•  
+        System.out.println("æ£‹å­" + chess.getLabel() + "å½“å‰ä½ç½®ä¸ºï¼š" + "ç¬¬" + chess.getX() + "è¡Œ" + "ç¬¬" + chess.getY() + "åˆ—ã€‚");  
     }  
 }

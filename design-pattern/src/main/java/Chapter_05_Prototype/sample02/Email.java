@@ -10,12 +10,12 @@ public class Email implements Serializable {
     }
 
     public Email deepClone() throws IOException, ClassNotFoundException, OptionalDataException {
-        //½«¶ÔÏóĞ´ÈëÁ÷ÖĞ
+        //å°†å¯¹è±¡å†™å…¥æµä¸­
         ByteArrayOutputStream bao = new ByteArrayOutputStream();
         ObjectOutputStream oos = new ObjectOutputStream(bao);
         oos.writeObject(this);
 
-        //½«¶ÔÏó´ÓÁ÷ÖĞÈ¡³ö
+        //å°†å¯¹è±¡ä»æµä¸­å–å‡º
         ByteArrayInputStream bis = new ByteArrayInputStream(bao.toByteArray());
         ObjectInputStream ois = new ObjectInputStream(bis);
         return (Email)ois.readObject();
@@ -26,7 +26,7 @@ public class Email implements Serializable {
     }
 
     public void display() {
-        System.out.println("²é¿´ÓÊ¼ş");
+        System.out.println("æŸ¥çœ‹é‚®ä»¶");
     }
 
 }

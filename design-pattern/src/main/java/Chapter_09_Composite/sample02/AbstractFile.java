@@ -1,6 +1,6 @@
 package Chapter_09_Composite.sample02;
 
-//抽象文件类：抽象构件
+//鎶借薄鏂囦欢绫伙細鎶借薄鏋勪欢
 abstract class AbstractFile {  
     public abstract void add(AbstractFile file);  
     public abstract void remove(AbstractFile file);  

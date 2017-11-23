@@ -1,14 +1,14 @@
 package Chapter_15_Command.sample02;
 
-//°ïÖúÃüÁîÀà£º¾ßÌåÃüÁîÀà
+//å¸®åŠ©å‘½ä»¤ç±»ï¼šå…·ä½“å‘½ä»¤ç±»
 public class HelpCommand extends Command {
-    private HelpHandler hhObj; //Î¬³Ö¶ÔÇëÇó½ÓÊÕÕßµÄÒıÓÃ  
+    private HelpHandler hhObj; //ç»´æŒå¯¹è¯·æ±‚æ¥æ”¶è€…çš„å¼•ç”¨  
 
     public HelpCommand() {  
         hhObj = new HelpHandler();  
     }  
 
-    //ÃüÁîÖ´ĞĞ·½·¨£¬½«µ÷ÓÃÇëÇó½ÓÊÕÕßµÄÒµÎñ·½·¨  
+    //å‘½ä»¤æ‰§è¡Œæ–¹æ³•ï¼Œå°†è°ƒç”¨è¯·æ±‚æ¥æ”¶è€…çš„ä¸šåŠ¡æ–¹æ³•  
     public void execute() {  
         hhObj.display();  
     }  

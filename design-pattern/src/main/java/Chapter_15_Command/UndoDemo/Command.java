@@ -35,13 +35,13 @@ class CalculatorForm
 	public void compute(int value)
 	{
 		int i = command.execute(value);
-		System.out.println("Ö´ĞĞÔËËã£¬ÔËËã½á¹ûÎª£º" + i);
+		System.out.println("æ‰§è¡Œè¿ç®—ï¼Œè¿ç®—ç»“æœä¸ºï¼š" + i);
 	}
 	
 	public void undo()
 	{
 		int i = command.undo();
-		System.out.println("Ö´ĞĞ³·Ïú£¬ÔËËã½á¹ûÎª£º" + i);
+		System.out.println("æ‰§è¡Œæ’¤é”€ï¼Œè¿ç®—ç»“æœä¸ºï¼š" + i);
 	}
 }
 

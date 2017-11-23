@@ -4,7 +4,7 @@ public class MiddlePen extends Pen
 {
 	public void draw(String name)
 	{
-		String penType="ÖĞºÅÃ«±Ê»æÖÆ";
+		String penType="ä¸­å·æ¯›ç¬”ç»˜åˆ¶";
 		this.color.bepaint(penType,name);			
 	}	
 }

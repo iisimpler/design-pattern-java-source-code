@@ -4,14 +4,14 @@ public abstract class BankTemplateMethod
 {
     public void takeNumber()
 	{
-		System.out.println("È¡ºÅÅÅ¶Ó¡£");
+		System.out.println("å–å·æ’é˜Ÿã€‚");
 	}
 	
 	public abstract void transact();
 	
 	public void evaluate()
 	{
-		System.out.println("·´À¡ÆÀ·Ö¡£");
+		System.out.println("åé¦ˆè¯„åˆ†ã€‚");
 	}
 
     public void process()

@@ -2,10 +2,10 @@ package Chapter_15_Command.sample02;
 
 import java.util.ArrayList;
 
-//¹¦ÄÜ¼üÉèÖÃ´°¿ÚÀà
+//åŠŸèƒ½é”®è®¾ç½®çª—å£ç±»
 public class FBSettingWindow {
-    private String title; //´°¿Ú±êÌâ  
-    //¶¨ÒåÒ»¸öArrayListÀ´´æ´¢ËùÓĞ¹¦ÄÜ¼ü  
+    private String title; //çª—å£æ ‡é¢˜  
+    //å®šä¹‰ä¸€ä¸ªArrayListæ¥å­˜å‚¨æ‰€æœ‰åŠŸèƒ½é”®  
     private ArrayList<FunctionButton> functionButtons = new ArrayList<FunctionButton>();
 
     public FBSettingWindow(String title) {  
@@ -27,10 +27,10 @@ public class FBSettingWindow {
     public void removeFunctionButton(FunctionButton fb) {  
         functionButtons.remove(fb);  
     }
-    //ÏÔÊ¾´°¿Ú¼°¹¦ÄÜ¼ü
+    //æ˜¾ç¤ºçª—å£åŠåŠŸèƒ½é”®
     public void display() {
-        System.out.println("ÏÔÊ¾´°¿Ú£º" + this.title);
-        System.out.println("ÏÔÊ¾¹¦ÄÜ¼ü£º");
+        System.out.println("æ˜¾ç¤ºçª—å£ï¼š" + this.title);
+        System.out.println("æ˜¾ç¤ºåŠŸèƒ½é”®ï¼š");
         for (FunctionButton fb : functionButtons) {
             System.out.println(fb.getName());
         }

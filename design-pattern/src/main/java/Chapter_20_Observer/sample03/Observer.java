@@ -1,12 +1,12 @@
 package Chapter_20_Observer.sample03;
 
-//³éÏó¹Û²ìÀà
+//æŠ½è±¡è§‚å¯Ÿç±»
 interface Observer {
     public String getName();
 
     public void setName(String name);
 
-    public void help(); //ÉùÃ÷Ö§Ô®ÃËÓÑ·½·¨  
+    public void help(); //å£°æ˜æ”¯æ´ç›Ÿå‹æ–¹æ³•  
 
-    public void beAttacked(AllyControlCenter acc); //ÉùÃ÷ÔâÊÜ¹¥»÷·½·¨
+    public void beAttacked(AllyControlCenter acc); //å£°æ˜é­å—æ”»å‡»æ–¹æ³•
 }  

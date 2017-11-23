@@ -4,12 +4,12 @@ public class Fan
 {
 	public void on()
 	{
-		System.out.println("·çÉÈ´ò¿ª£¡");	
+		System.out.println("é£æ‰‡æ‰“å¼€ï¼");	
 	}
 	
 	public void off()
 	{
-		System.out.println("·çÉÈ¹Ø±Õ£¡");		
+		System.out.println("é£æ‰‡å…³é—­ï¼");		
 	}
 	
 }

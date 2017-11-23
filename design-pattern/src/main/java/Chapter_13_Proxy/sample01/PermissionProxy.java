@@ -9,7 +9,7 @@ public class PermissionProxy implements AbstractPermission
 	{
 		if(0==level)
 		{
-			System.out.println("¶Ô²»Æğ£¬ÄãÃ»ÓĞ¸ÃÈ¨ÏŞ!");
+			System.out.println("å¯¹ä¸èµ·ï¼Œä½ æ²¡æœ‰è¯¥æƒé™!");
 		}
 		else if(1==level)
 		{
@@ -19,14 +19,14 @@ public class PermissionProxy implements AbstractPermission
 	
 	public void viewNote()
 	{
-		System.out.println("²é¿´Ìû×Ó£¡");
+		System.out.println("æŸ¥çœ‹å¸–å­ï¼");
 	}
 	
 	public void publishNote()
 	{
 		if(0==level)
 		{
-			System.out.println("¶Ô²»Æğ£¬ÄãÃ»ÓĞ¸ÃÈ¨ÏŞ!");
+			System.out.println("å¯¹ä¸èµ·ï¼Œä½ æ²¡æœ‰è¯¥æƒé™!");
 		}
 		else if(1==level)
 		{
@@ -38,7 +38,7 @@ public class PermissionProxy implements AbstractPermission
 	{
 		if(0==level)
 		{
-			System.out.println("¶Ô²»Æğ£¬ÄãÃ»ÓĞ¸ÃÈ¨ÏŞ!");
+			System.out.println("å¯¹ä¸èµ·ï¼Œä½ æ²¡æœ‰è¯¥æƒé™!");
 		}
 		else if(1==level)
 		{

@@ -4,11 +4,11 @@ public class Bird
 {
 	public void tweedle()
 	{
-		System.out.println("Äñ¶ùß´ß´½Ğ£¡");
+		System.out.println("é¸Ÿå„¿å½å½å«ï¼");
 	}
 	
 	public void fly()
 	{
-		System.out.println("Äñ¶ù¿ì¿ì·É£¡");
+		System.out.println("é¸Ÿå„¿å¿«å¿«é£ï¼");
 	}
 }

@@ -1,6 +1,6 @@
 package Chapter_16_Interpreter.sample02;
 
-//¾àÀë½âÊÍ£ºÖÕ½á·û±í´ïÊ½
+//è·ç¦»è§£é‡Šï¼šç»ˆç»“ç¬¦è¡¨è¾¾å¼
 class DistanceNode extends AbstractNode {
     private String distance;
 
@@ -8,7 +8,7 @@ class DistanceNode extends AbstractNode {
         this.distance = distance;
     }
 
-    //¾àÀë±í´ïÊ½µÄ½âÊÍ²Ù×÷
+    //è·ç¦»è¡¨è¾¾å¼çš„è§£é‡Šæ“ä½œ
     public String interpret() {
         return this.distance;
     }

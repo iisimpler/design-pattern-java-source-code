@@ -4,11 +4,11 @@ public class Customer extends Visitor
 {
 	public void visit(Apple apple)
 	{
-		System.out.println("¹Ë¿Í" + name + "Ñ¡Æ»¹û¡£");
+		System.out.println("é¡¾å®¢" + name + "é€‰è‹¹æžœã€‚");
 	}
 	
 	public void visit(Book book)
 	{
-		System.out.println("¹Ë¿Í" + name + "ÂòÊé¡£");
+		System.out.println("é¡¾å®¢" + name + "ä¹°ä¹¦ã€‚");
 	}
 }

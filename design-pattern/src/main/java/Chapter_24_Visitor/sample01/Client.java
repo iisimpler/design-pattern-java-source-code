@@ -14,7 +14,7 @@ public class Client
         
         visitor=(Visitor)XMLUtil.getBean();
         
-        visitor.setName("ÕÅÈý");
+        visitor.setName("å¼ ä¸‰");
         	
         basket.accept(visitor);
 	}

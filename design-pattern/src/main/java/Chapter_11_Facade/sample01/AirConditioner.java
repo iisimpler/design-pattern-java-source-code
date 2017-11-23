@@ -4,11 +4,11 @@ public class AirConditioner
 {
 	public void on()
 	{
-		System.out.println("¿Õµ÷´ò¿ª£¡");
+		System.out.println("ç©ºè°ƒæ‰“å¼€ï¼");
 	}
 	
 	public void off()
 	{
-		System.out.println("¿Õµ÷¹Ø±Õ£¡");
+		System.out.println("ç©ºè°ƒå…³é—­ï¼");
 	}
 }

@@ -1,6 +1,6 @@
 package Chapter_18_Mediator.sample02;
 
-//³éÏóÖĞ½éÕß
+//æŠ½è±¡ä¸­ä»‹è€…
 abstract class Mediator {
     public abstract void componentChanged(Component c);
 }  

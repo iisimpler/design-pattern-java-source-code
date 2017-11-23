@@ -1,17 +1,17 @@
 package Chapter_20_Observer.sample03;
 
-//¾ßÌåÕ½¶Ó¿ØÖÆÖĞĞÄÀà£º¾ßÌåÄ¿±êÀà
+//å…·ä½“æˆ˜é˜Ÿæ§åˆ¶ä¸­å¿ƒç±»ï¼šå…·ä½“ç›®æ ‡ç±»
 class ConcreteAllyControlCenter extends AllyControlCenter {
     public ConcreteAllyControlCenter(String allyName) {
-        System.out.println(allyName + "Õ½¶Ó×é½¨³É¹¦£¡");
+        System.out.println(allyName + "æˆ˜é˜Ÿç»„å»ºæˆåŠŸï¼");
         System.out.println("----------------------------");
         this.allyName = allyName;
     }
 
-    //ÊµÏÖÍ¨Öª·½·¨  
+    //å®ç°é€šçŸ¥æ–¹æ³•  
     public void notifyObserver(String name) {
-        System.out.println(this.allyName + "Õ½¶Ó½ô¼±Í¨Öª£¬ÃËÓÑ" + name + "ÔâÊÜµĞÈË¹¥»÷£¡");
-        //±éÀú¹Û²ìÕß¼¯ºÏ£¬µ÷ÓÃÃ¿Ò»¸öÃËÓÑ£¨×Ô¼º³ıÍâ£©µÄÖ§Ô®·½·¨  
+        System.out.println(this.allyName + "æˆ˜é˜Ÿç´§æ€¥é€šçŸ¥ï¼Œç›Ÿå‹" + name + "é­å—æ•Œäººæ”»å‡»ï¼");
+        //éå†è§‚å¯Ÿè€…é›†åˆï¼Œè°ƒç”¨æ¯ä¸€ä¸ªç›Ÿå‹ï¼ˆè‡ªå·±é™¤å¤–ï¼‰çš„æ”¯æ´æ–¹æ³•  
         for (Object obs : players) {
             if (!((Observer) obs).getName().equalsIgnoreCase(name)) {
                 ((Observer) obs).help();
