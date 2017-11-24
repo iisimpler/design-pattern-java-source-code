@@ -1,7 +1,7 @@
 package Chapter_04_Singleton.sample;
 
 public class SingletonLanhan {
-    private static SingletonLanhan instance = null;
+    private volatile static SingletonLanhan instance = null;
 
     private SingletonLanhan() {
     }
