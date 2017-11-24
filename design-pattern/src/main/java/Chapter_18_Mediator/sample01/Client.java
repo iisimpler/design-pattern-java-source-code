@@ -4,11 +4,11 @@ public class Client {
     public static void main(String args[]) {
         AbstractChatroom happyChat = new ChatGroup();
         Member member1, member2, member3, member4, member5;
-        member1 = new DiamondMember("ÕÅÈı");
-        member2 = new DiamondMember("ÀîËÄ");
-        member3 = new CommonMember("ÍõÎå");
-        member4 = new CommonMember("Ğ¡·¼");
-        member5 = new CommonMember("Ğ¡ºì");
+        member1 = new DiamondMember("å¼ ä¸‰");
+        member2 = new DiamondMember("æå››");
+        member3 = new CommonMember("ç‹äº”");
+        member4 = new CommonMember("å°èŠ³");
+        member5 = new CommonMember("å°çº¢");
 
         happyChat.register(member1);
         happyChat.register(member2);
@@ -16,15 +16,15 @@ public class Client {
         happyChat.register(member4);
         happyChat.register(member5);
 
-        member1.sendText("ÀîËÄ", "ÀîËÄ£¬ÄãºÃ£¡");
-        member2.sendText("ÕÅÈı", "ÕÅÈı£¬ÄãºÃ£¡");
-        member1.sendText("ÀîËÄ", "½ñÌìÌìÆø²»´í£¬ÓĞÈÕ£¡");
-        member2.sendImage("ÕÅÈı", "Ò»¸öºÜ´óºÜ´óµÄÌ«Ñô");
-        member2.sendImage("ÕÅÈı", "Ì«Ñô");
-        member3.sendText("Ğ¡·¼", "»¹ÓĞÎÊÌâÂğ£¿");
-        member3.sendText("Ğ¡ºì", "»¹ÓĞÎÊÌâÂğ£¿");
-        member4.sendText("ÍõÎå", "Ã»ÓĞÁË£¬Ğ»Ğ»£¡");
-        member5.sendText("ÍõÎå", "ÎÒÒ²Ã»ÓĞÁË£¡");
-        member5.sendImage("ÍõÎå", "Ğ»Ğ»");
+        member1.sendText("æå››", "æå››ï¼Œä½ å¥½ï¼");
+        member2.sendText("å¼ ä¸‰", "å¼ ä¸‰ï¼Œä½ å¥½ï¼");
+        member1.sendText("æå››", "ä»Šå¤©å¤©æ°”ä¸é”™ï¼Œæœ‰æ—¥ï¼");
+        member2.sendImage("å¼ ä¸‰", "ä¸€ä¸ªå¾ˆå¤§å¾ˆå¤§çš„å¤ªé˜³");
+        member2.sendImage("å¼ ä¸‰", "å¤ªé˜³");
+        member3.sendText("å°èŠ³", "è¿˜æœ‰é—®é¢˜å—ï¼Ÿ");
+        member3.sendText("å°çº¢", "è¿˜æœ‰é—®é¢˜å—ï¼Ÿ");
+        member4.sendText("ç‹äº”", "æ²¡æœ‰äº†ï¼Œè°¢è°¢ï¼");
+        member5.sendText("ç‹äº”", "æˆ‘ä¹Ÿæ²¡æœ‰äº†ï¼");
+        member5.sendImage("ç‹äº”", "è°¢è°¢");
     }
 }

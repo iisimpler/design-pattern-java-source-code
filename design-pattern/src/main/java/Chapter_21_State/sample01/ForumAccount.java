@@ -7,7 +7,7 @@ public class ForumAccount {
     public ForumAccount(String name) {
         this.name = name;
         this.state = new PrimaryState(this);
-        System.out.println(this.name + "×¢²á³É¹¦£¡");
+        System.out.println(this.name + "æ³¨å†ŒæˆåŠŸï¼");
         System.out.println("---------------------------------------------");
     }
 

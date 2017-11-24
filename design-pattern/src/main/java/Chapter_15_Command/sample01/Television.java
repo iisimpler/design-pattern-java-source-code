@@ -4,16 +4,16 @@ public class Television
 {
 	public void open()
 	{
-		System.out.println("´ò¿ªµçÊÓ»ú£¡");
+		System.out.println("æ‰“å¼€ç”µè§†æœºï¼");
 	}
 	
 	public void close()
 	{
-		System.out.println("¹Ø±ÕµçÊÓ»ú£¡");		
+		System.out.println("å…³é—­ç”µè§†æœºï¼");		
 	}
 	
 	public void changeChannel()
 	{
-		System.out.println("ÇĞ»»µçÊÓÆµµÀ£¡");
+		System.out.println("åˆ‡æ¢ç”µè§†é¢‘é“ï¼");
 	}
 }

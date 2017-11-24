@@ -11,6 +11,6 @@ public class Client
 		pen=(Pen)XMLUtilPen.getBean("pen");
 		
 		pen.setColor(color);
-		pen.draw("ÏÊ»¨");
+		pen.draw("é²œèŠ±");
 	}
 }

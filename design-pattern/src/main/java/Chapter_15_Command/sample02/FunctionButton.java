@@ -1,9 +1,9 @@
 package Chapter_15_Command.sample02;
 
-//¹¦ÄÜ¼üÀà£ºÇëÇó·¢ËÍÕß
+//åŠŸèƒ½é”®ç±»ï¼šè¯·æ±‚å‘é€è€…
 public class FunctionButton {
-    private String name; //¹¦ÄÜ¼üÃû³Æ  
-    private Command command; //Î¬³ÖÒ»¸ö³éÏóÃüÁî¶ÔÏóµÄÒıÓÃ  
+    private String name; //åŠŸèƒ½é”®åç§°  
+    private Command command; //ç»´æŒä¸€ä¸ªæŠ½è±¡å‘½ä»¤å¯¹è±¡çš„å¼•ç”¨  
 
     public FunctionButton(String name) {  
         this.name = name;  
@@ -13,14 +13,14 @@ public class FunctionButton {
         return this.name;  
     }  
 
-    //Îª¹¦ÄÜ¼ü×¢ÈëÃüÁî  
+    //ä¸ºåŠŸèƒ½é”®æ³¨å…¥å‘½ä»¤  
     public void setCommand(Command command) {  
         this.command = command;  
     }  
 
-    //·¢ËÍÇëÇóµÄ·½·¨  
+    //å‘é€è¯·æ±‚çš„æ–¹æ³•  
     public void onClick() {  
-        System.out.print("µã»÷¹¦ÄÜ¼ü£º");  
+        System.out.print("ç‚¹å‡»åŠŸèƒ½é”®ï¼š");  
         command.execute();  
     }  
 }  

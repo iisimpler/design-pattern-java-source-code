@@ -1,6 +1,6 @@
 package Chapter_09_Composite.sample02;
 
-//Í¼ÏñÎÄ¼şÀà£ºÒ¶×Ó¹¹¼ş
+//å›¾åƒæ–‡ä»¶ç±»ï¼šå¶å­æ„ä»¶
 public class ImageFile extends AbstractFile {
     private String name;  
 
@@ -9,20 +9,20 @@ public class ImageFile extends AbstractFile {
     }  
 
     public void add(AbstractFile file) {  
-       System.out.println("¶Ô²»Æğ£¬²»Ö§³Ö¸Ã·½·¨£¡");  
+       System.out.println("å¯¹ä¸èµ·ï¼Œä¸æ”¯æŒè¯¥æ–¹æ³•ï¼");  
     }  
 
     public void remove(AbstractFile file) {  
-        System.out.println("¶Ô²»Æğ£¬²»Ö§³Ö¸Ã·½·¨£¡");  
+        System.out.println("å¯¹ä¸èµ·ï¼Œä¸æ”¯æŒè¯¥æ–¹æ³•ï¼");  
     }  
 
     public AbstractFile getChild(int i) {  
-        System.out.println("¶Ô²»Æğ£¬²»Ö§³Ö¸Ã·½·¨£¡");  
+        System.out.println("å¯¹ä¸èµ·ï¼Œä¸æ”¯æŒè¯¥æ–¹æ³•ï¼");  
         return null;  
     }  
 
     public void killVirus() {  
-        //Ä£ÄâÉ±¶¾  
-        System.out.println("----¶ÔÍ¼ÏñÎÄ¼ş'" + name + "'½øĞĞÉ±¶¾");  
+        //æ¨¡æ‹Ÿæ€æ¯’  
+        System.out.println("----å¯¹å›¾åƒæ–‡ä»¶'" + name + "'è¿›è¡Œæ€æ¯’");  
     }  
 }  

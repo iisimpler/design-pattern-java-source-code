@@ -9,16 +9,16 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 
 public class XMLUtil {
-//¸Ã·½·¨ÓÃÓÚ´ÓXMLÅäÖÃÎÄ¼şÖĞÌáÈ¡¾ßÌåÀàÀàÃû£¬²¢·µ»ØÒ»¸öÊµÀı¶ÔÏó£¬¿ÉÒÔÍ¨¹ı²ÎÊıµÄ²»Í¬·µ»Ø²»Í¬ÀàÃû½ÚµãËù¶ÔÓ¦µÄÊµÀı  
+//è¯¥æ–¹æ³•ç”¨äºä»XMLé…ç½®æ–‡ä»¶ä¸­æå–å…·ä½“ç±»ç±»åï¼Œå¹¶è¿”å›ä¸€ä¸ªå®ä¾‹å¯¹è±¡ï¼Œå¯ä»¥é€šè¿‡å‚æ•°çš„ä¸åŒè¿”å›ä¸åŒç±»åèŠ‚ç‚¹æ‰€å¯¹åº”çš„å®ä¾‹  
     public static Object getBean(int i) {  
         try {  
-            //´´½¨ÎÄµµ¶ÔÏó  
+            //åˆ›å»ºæ–‡æ¡£å¯¹è±¡  
             DocumentBuilderFactory dFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = dFactory.newDocumentBuilder();
             String confPath = XMLUtil.class.getResource("").getPath() + "/config.xml";
             Document doc = builder.parse(new File(confPath));
 
-            //»ñÈ¡°üº¬ÀàÃûµÄÎÄ±¾½Úµã  
+            //è·å–åŒ…å«ç±»åçš„æ–‡æœ¬èŠ‚ç‚¹  
             NodeList nl = doc.getElementsByTagName("className");
             Node classNode = null;
             if (0 == i) {  
@@ -30,7 +30,7 @@ public class XMLUtil {
 
             String cName = classNode.getNodeValue();  
 
-            //Í¨¹ıÀàÃûÉú³ÉÊµÀı¶ÔÏó²¢½«Æä·µ»Ø  
+            //é€šè¿‡ç±»åç”Ÿæˆå®ä¾‹å¯¹è±¡å¹¶å°†å…¶è¿”å›  
             Class c = Class.forName(cName);  
             Object obj = c.newInstance();  
             return obj;  

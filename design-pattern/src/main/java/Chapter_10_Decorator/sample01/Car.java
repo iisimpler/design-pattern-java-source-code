@@ -4,11 +4,11 @@ public final class Car implements Transform
 {
 	public Car()
 	{
-		System.out.println("±äĞÎ½ğ¸ÕÊÇÒ»Á¾³µ£¡");
+		System.out.println("å˜å½¢é‡‘åˆšæ˜¯ä¸€è¾†è½¦ï¼");
 	}
 	
 	public void move()
 	{
-		System.out.println("ÔÚÂ½µØÉÏÒÆ¶¯£¡");	
+		System.out.println("åœ¨é™†åœ°ä¸Šç§»åŠ¨ï¼");	
 	}
 }

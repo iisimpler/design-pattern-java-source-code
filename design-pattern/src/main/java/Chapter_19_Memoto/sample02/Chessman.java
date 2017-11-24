@@ -1,6 +1,6 @@
 package Chapter_19_Memoto.sample02;
 
-//ÏóÆåÆå×ÓÀà£ºÔ­·¢Æ÷
+//è±¡æ£‹æ£‹å­ç±»ï¼šåŸå‘å™¨
 class Chessman {  
     private String label;  
     private int x;  
@@ -36,12 +36,12 @@ class Chessman {
         return (this.y);   
     }  
 
-    //±£´æ×´Ì¬  
+    //ä¿å­˜çŠ¶æ€  
     public ChessmanMemento save() {  
         return new ChessmanMemento(this.label,this.x,this.y);  
     }  
 
-    //»Ö¸´×´Ì¬  
+    //æ¢å¤çŠ¶æ€  
     public void restore(ChessmanMemento memento) {  
         this.label = memento.getLabel();  
         this.x = memento.getX();  

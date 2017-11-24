@@ -1,8 +1,8 @@
 package Chapter_18_Mediator.sample02;
 
-//°´Å¥Àà£º¾ßÌåÍ¬ÊÂÀà
+//æŒ‰é’®ç±»ï¼šå…·ä½“åŒäº‹ç±»
 class Button extends Component {
     public void update() {
-        //°´Å¥²»²úÉú½»»¥  
+        //æŒ‰é’®ä¸äº§ç”Ÿäº¤äº’  
     }
 }  

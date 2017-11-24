@@ -1,8 +1,8 @@
 package Chapter_15_Command.sample02;
 
-//´°¿Ú´¦ÀíÀà£ºÇëÇó½ÓÊÕÕß
+//çª—å£å¤„ç†ç±»ï¼šè¯·æ±‚æ¥æ”¶è€…
 public class WindowHanlder {
     public void minimize() {  
-        System.out.println("½«´°¿Ú×îĞ¡»¯ÖÁÍĞÅÌ£¡");  
+        System.out.println("å°†çª—å£æœ€å°åŒ–è‡³æ‰˜ç›˜ï¼");  
     }  
 }  

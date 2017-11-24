@@ -2,9 +2,9 @@ package Chapter_09_Composite.sample02;
 
 import java.util.ArrayList;
 
-//ÎÄ¼ş¼ĞÀà£ºÈİÆ÷¹¹¼ş
+//æ–‡ä»¶å¤¹ç±»ï¼šå®¹å™¨æ„ä»¶
 class Folder extends AbstractFile {  
-    //¶¨Òå¼¯ºÏfileList£¬ÓÃÓÚ´æ´¢AbstractFileÀàĞÍµÄ³ÉÔ±  
+    //å®šä¹‰é›†åˆfileListï¼Œç”¨äºå­˜å‚¨AbstractFileç±»å‹çš„æˆå‘˜  
     private ArrayList<AbstractFile> fileList=new ArrayList<AbstractFile>();
     private String name;  
 
@@ -25,9 +25,9 @@ class Folder extends AbstractFile {
     }  
 
     public void killVirus() {  
-        System.out.println("****¶ÔÎÄ¼ş¼Ğ'" + name + "'½øĞĞÉ±¶¾");  //Ä£ÄâÉ±¶¾  
+        System.out.println("****å¯¹æ–‡ä»¶å¤¹'" + name + "'è¿›è¡Œæ€æ¯’");  //æ¨¡æ‹Ÿæ€æ¯’  
 
-        //µİ¹éµ÷ÓÃ³ÉÔ±¹¹¼şµÄkillVirus()·½·¨  
+        //é€’å½’è°ƒç”¨æˆå‘˜æ„ä»¶çš„killVirus()æ–¹æ³•  
         for(Object obj : fileList) {  
             ((AbstractFile)obj).killVirus();  
         }  

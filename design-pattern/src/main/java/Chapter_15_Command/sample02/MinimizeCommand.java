@@ -1,14 +1,14 @@
 package Chapter_15_Command.sample02;
 
-//×îĞ¡»¯ÃüÁîÀà£º¾ßÌåÃüÁîÀà
+//æœ€å°åŒ–å‘½ä»¤ç±»ï¼šå…·ä½“å‘½ä»¤ç±»
 public class MinimizeCommand extends Command {
-    private WindowHanlder whObj; //Î¬³Ö¶ÔÇëÇó½ÓÊÕÕßµÄÒıÓÃ  
+    private WindowHanlder whObj; //ç»´æŒå¯¹è¯·æ±‚æ¥æ”¶è€…çš„å¼•ç”¨  
 
     public MinimizeCommand() {  
         whObj = new WindowHanlder();  
     }  
 
-//ÃüÁîÖ´ĞĞ·½·¨£¬½«µ÷ÓÃÇëÇó½ÓÊÕÕßµÄÒµÎñ·½·¨  
+//å‘½ä»¤æ‰§è¡Œæ–¹æ³•ï¼Œå°†è°ƒç”¨è¯·æ±‚æ¥æ”¶è€…çš„ä¸šåŠ¡æ–¹æ³•  
     public void execute() {  
         whObj.minimize();  
     }  

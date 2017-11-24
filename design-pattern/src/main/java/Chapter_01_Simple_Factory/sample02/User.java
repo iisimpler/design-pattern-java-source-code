@@ -2,7 +2,7 @@ package Chapter_01_Simple_Factory.sample02;
 
 public abstract class User {
     public void sameOperation() {
-        System.out.println("ĞŞ¸Ä¸öÈË×ÊÁÏ£¡");
+        System.out.println("ä¿®æ”¹ä¸ªäººèµ„æ–™ï¼");
     }
 
     public abstract void diffOperation();

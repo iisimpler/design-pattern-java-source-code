@@ -2,18 +2,18 @@ package Chapter_15_Command.sample02;
 
 public class Client {
     public static void main(String args[]) {  
-        FBSettingWindow fbsw = new FBSettingWindow("¹¦ÄÜ¼üÉèÖÃ");  
+        FBSettingWindow fbsw = new FBSettingWindow("åŠŸèƒ½é”®è®¾ç½®");  
 
         FunctionButton fb1,fb2;  
-        fb1 = new FunctionButton("¹¦ÄÜ¼ü1");  
-        fb2 = new FunctionButton("¹¦ÄÜ¼ü2");
+        fb1 = new FunctionButton("åŠŸèƒ½é”®1");  
+        fb2 = new FunctionButton("åŠŸèƒ½é”®2");
 
         Command command1,command2;  
-        //Í¨¹ı¶ÁÈ¡ÅäÖÃÎÄ¼şºÍ·´ÉäÉú³É¾ßÌåÃüÁî¶ÔÏó  
+        //é€šè¿‡è¯»å–é…ç½®æ–‡ä»¶å’Œåå°„ç”Ÿæˆå…·ä½“å‘½ä»¤å¯¹è±¡  
         command1 = (Command)XMLUtil.getBean(0);  
         command2 = (Command)XMLUtil.getBean(1);  
 
-        //½«ÃüÁî¶ÔÏó×¢Èë¹¦ÄÜ¼ü  
+        //å°†å‘½ä»¤å¯¹è±¡æ³¨å…¥åŠŸèƒ½é”®  
         fb1.setCommand(command1);  
         fb2.setCommand(command2);  
 
@@ -21,7 +21,7 @@ public class Client {
         fbsw.addFunctionButton(fb2);
         fbsw.display();
 
-        //µ÷ÓÃ¹¦ÄÜ¼üµÄÒµÎñ·½·¨  
+        //è°ƒç”¨åŠŸèƒ½é”®çš„ä¸šåŠ¡æ–¹æ³•  
         fb1.onClick();  
         fb2.onClick();  
     }  

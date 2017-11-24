@@ -6,12 +6,12 @@ public class DiamondMember extends Member {
     }
 
     public void sendText(String to, String message) {
-        System.out.println("×êÊ¯»áÔ±·¢ËÍĞÅÏ¢£º");
-        chatroom.sendText(name, to, message);  //·¢ËÍ
+        System.out.println("é’»çŸ³ä¼šå‘˜å‘é€ä¿¡æ¯ï¼š");
+        chatroom.sendText(name, to, message);  //å‘é€
     }
 
     public void sendImage(String to, String image) {
-        System.out.println("×êÊ¯»áÔ±·¢ËÍÍ¼Æ¬£º");
-        chatroom.sendImage(name, to, image);  //·¢ËÍ
+        System.out.println("é’»çŸ³ä¼šå‘˜å‘é€å›¾ç‰‡ï¼š");
+        chatroom.sendImage(name, to, image);  //å‘é€
     }
 }

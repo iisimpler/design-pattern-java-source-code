@@ -4,7 +4,7 @@ public class BigPen extends Pen
 {
 	public void draw(String name)
 	{
-		String penType="´óºÅÃ«±Ê»æÖÆ";
+		String penType="å¤§å·æ¯›ç¬”ç»˜åˆ¶";
 		this.color.bepaint(penType,name);			
 	}	
 }

@@ -1,17 +1,17 @@
 package Chapter_16_Interpreter.sample02;
 
-//And½âÊÍ£º·ÇÖÕ½á·û±í´ïÊ½
+//Andè§£é‡Šï¼šéç»ˆç»“ç¬¦è¡¨è¾¾å¼
 class AndNode extends AbstractNode {  
-    private AbstractNode left; //AndµÄ×ó±í´ïÊ½  
-    private AbstractNode right; //AndµÄÓÒ±í´ïÊ½  
+    private AbstractNode left; //Andçš„å·¦è¡¨è¾¾å¼  
+    private AbstractNode right; //Andçš„å³è¡¨è¾¾å¼  
 
     public AndNode(AbstractNode left, AbstractNode right) {  
         this.left = left;  
         this.right = right;  
     }  
 
-    //And±í´ïÊ½½âÊÍ²Ù×÷  
+    //Andè¡¨è¾¾å¼è§£é‡Šæ“ä½œ  
     public String interpret() {  
-        return left.interpret() + "ÔÙ" + right.interpret();  
+        return left.interpret() + "å†" + right.interpret();  
     }  
 }  

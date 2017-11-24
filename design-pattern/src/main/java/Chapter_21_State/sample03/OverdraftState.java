@@ -1,6 +1,6 @@
 package Chapter_21_State.sample03;
 
-//Í¸Ö§×´Ì¬£º¾ßÌå×´Ì¬Àà
+//é€æ”¯çŠ¶æ€ï¼šå…·ä½“çŠ¶æ€ç±»
 class OverdraftState extends AccountState {
     public OverdraftState(AccountState state) {
         this.acc = state.acc;
@@ -17,17 +17,17 @@ class OverdraftState extends AccountState {
     }
 
     public void computeInterest() {
-        System.out.println("¼ÆËãÀûÏ¢£¡");
+        System.out.println("è®¡ç®—åˆ©æ¯ï¼");
     }
 
-    //×´Ì¬×ª»»  
+    //çŠ¶æ€è½¬æ¢  
     public void stateCheck() {
         if (acc.getBalance() > 0) {
             acc.setState(new NormalState(this));
         } else if (acc.getBalance() == -2000) {
             acc.setState(new RestrictedState(this));
         } else if (acc.getBalance() < -2000) {
-            System.out.println("²Ù×÷ÊÜÏÞ£¡");
+            System.out.println("æ“ä½œå—é™ï¼");
         }
     }
 }  

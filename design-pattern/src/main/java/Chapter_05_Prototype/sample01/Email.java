@@ -22,7 +22,7 @@ public class Email implements Cloneable {
     }
 
     public void display() {
-        System.out.println("�鿴�ʼ�");
+        System.out.println("查看邮件");
     }
 
 }

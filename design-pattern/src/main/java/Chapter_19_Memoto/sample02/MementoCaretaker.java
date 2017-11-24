@@ -1,6 +1,6 @@
 package Chapter_19_Memoto.sample02;
 
-//象棋棋子备忘录管理类：负责人
+//璞℃妫嬪瓙澶囧繕褰曠鐞嗙被锛氳礋璐ｄ汉
 class MementoCaretaker {  
     private ChessmanMemento memento;  
 

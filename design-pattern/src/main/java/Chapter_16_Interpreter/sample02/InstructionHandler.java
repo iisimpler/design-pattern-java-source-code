@@ -2,7 +2,7 @@ package Chapter_16_Interpreter.sample02;
 
 import java.util.Stack;
 
-//Ö¸Áî´¦ÀíÀà£º¹¤¾ßÀà
+//æŒ‡ä»¤å¤„ç†ç±»ï¼šå·¥å…·ç±»
 class InstructionHandler {
     private String instruction;
     private AbstractNode node;
@@ -10,23 +10,23 @@ class InstructionHandler {
     public void handle(String instruction) {
         AbstractNode left = null, right = null;
         AbstractNode direction = null, action = null, distance = null;
-        Stack stack = new Stack(); //ÉùÃ÷Ò»¸öÕ»¶ÔÏóÓÃÓÚ´æ´¢³éÏóÓï·¨Ê÷
-        String[] words = instruction.split(" "); //ÒÔ¿Õ¸ñ·Ö¸ôÖ¸Áî×Ö·û´®  
+        Stack stack = new Stack(); //å£°æ˜ä¸€ä¸ªæ ˆå¯¹è±¡ç”¨äºå­˜å‚¨æŠ½è±¡è¯­æ³•æ ‘
+        String[] words = instruction.split(" "); //ä»¥ç©ºæ ¼åˆ†éš”æŒ‡ä»¤å­—ç¬¦ä¸²  
         for (int i = 0; i < words.length; i++) {
-            //±¾ÊµÀı²ÉÓÃÕ»µÄ·½Ê½À´´¦ÀíÖ¸Áî£¬Èç¹ûÓöµ½¡°and¡±£¬Ôò½«ÆäºóµÄÈı¸öµ¥´Ê×÷ÎªÈı¸öÖÕ½á·û±í´ïÊ½Á¬³ÉÒ»¸ö¼òµ¥¾ä×ÓSentenceNode×÷Îª¡°and¡±µÄÓÒ±í´ïÊ½£¬
-            // ¶ø½«´ÓÕ»¶¥µ¯³öµÄ±í´ïÊ½×÷Îª¡°and¡±µÄ×ó±í´ïÊ½£¬×îºó½«ĞÂµÄ¡°and¡±±í´ïÊ½Ñ¹ÈëÕ»ÖĞ¡£
+            //æœ¬å®ä¾‹é‡‡ç”¨æ ˆçš„æ–¹å¼æ¥å¤„ç†æŒ‡ä»¤ï¼Œå¦‚æœé‡åˆ°â€œandâ€ï¼Œåˆ™å°†å…¶åçš„ä¸‰ä¸ªå•è¯ä½œä¸ºä¸‰ä¸ªç»ˆç»“ç¬¦è¡¨è¾¾å¼è¿æˆä¸€ä¸ªç®€å•å¥å­SentenceNodeä½œä¸ºâ€œandâ€çš„å³è¡¨è¾¾å¼ï¼Œ
+            // è€Œå°†ä»æ ˆé¡¶å¼¹å‡ºçš„è¡¨è¾¾å¼ä½œä¸ºâ€œandâ€çš„å·¦è¡¨è¾¾å¼ï¼Œæœ€åå°†æ–°çš„â€œandâ€è¡¨è¾¾å¼å‹å…¥æ ˆä¸­ã€‚
             if (words[i].equalsIgnoreCase("and")) {
-                left = (AbstractNode) stack.pop(); //µ¯³öÕ»¶¥±í´ïÊ½×÷Îª×ó±í´ïÊ½
+                left = (AbstractNode) stack.pop(); //å¼¹å‡ºæ ˆé¡¶è¡¨è¾¾å¼ä½œä¸ºå·¦è¡¨è¾¾å¼
                 String word1 = words[++i];
                 direction = new DirectionNode(word1);
                 String word2 = words[++i];
                 action = new ActionNode(word2);
                 String word3 = words[++i];
                 distance = new DistanceNode(word3);
-                right = new SentenceNode(direction, action, distance); //ÓÒ±í´ïÊ½
-                stack.push(new AndNode(left, right)); //½«ĞÂ±í´ïÊ½Ñ¹ÈëÕ»ÖĞ
+                right = new SentenceNode(direction, action, distance); //å³è¡¨è¾¾å¼
+                stack.push(new AndNode(left, right)); //å°†æ–°è¡¨è¾¾å¼å‹å…¥æ ˆä¸­
             }
-            //Èç¹ûÊÇ´ÓÍ·¿ªÊ¼½øĞĞ½âÊÍ£¬Ôò½«Ç°Èı¸öµ¥´Ê×é³ÉÒ»¸ö¼òµ¥¾ä×ÓSentenceNode²¢½«¸Ã¾ä×ÓÑ¹ÈëÕ»ÖĞ
+            //å¦‚æœæ˜¯ä»å¤´å¼€å§‹è¿›è¡Œè§£é‡Šï¼Œåˆ™å°†å‰ä¸‰ä¸ªå•è¯ç»„æˆä¸€ä¸ªç®€å•å¥å­SentenceNodeå¹¶å°†è¯¥å¥å­å‹å…¥æ ˆä¸­
             else {
                 String word1 = words[i];
                 direction = new DirectionNode(word1);
@@ -35,14 +35,14 @@ class InstructionHandler {
                 String word3 = words[++i];
                 distance = new DistanceNode(word3);
                 left = new SentenceNode(direction, action, distance);
-                stack.push(left); //½«ĞÂ±í´ïÊ½Ñ¹ÈëÕ»ÖĞ
+                stack.push(left); //å°†æ–°è¡¨è¾¾å¼å‹å…¥æ ˆä¸­
             }
         }
-        this.node = (AbstractNode) stack.pop(); //½«È«²¿±í´ïÊ½´ÓÕ»ÖĞµ¯³ö
+        this.node = (AbstractNode) stack.pop(); //å°†å…¨éƒ¨è¡¨è¾¾å¼ä»æ ˆä¸­å¼¹å‡º
     }
 
     public String output() {
-        String result = node.interpret(); //½âÊÍ±í´ïÊ½
+        String result = node.interpret(); //è§£é‡Šè¡¨è¾¾å¼
         return result;
     }
 }

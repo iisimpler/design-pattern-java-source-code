@@ -4,7 +4,7 @@ public class RealPermission implements AbstractPermission
 {	
 	public void modifyUserInfo()
 	{
-		System.out.println("ĞŞ¸ÄÓÃ»§ĞÅÏ¢£¡");
+		System.out.println("ä¿®æ”¹ç”¨æˆ·ä¿¡æ¯ï¼");
 	}
 
 	public void viewNote()
@@ -12,12 +12,12 @@ public class RealPermission implements AbstractPermission
 	
 	public void publishNote()
 	{
-		System.out.println("·¢²¼ĞÂÌû£¡");
+		System.out.println("å‘å¸ƒæ–°å¸–ï¼");
 	}
 	
 	public void modifyNote()
 	{
-		System.out.println("ĞŞ¸Ä·¢ÌûÄÚÈİ£¡");
+		System.out.println("ä¿®æ”¹å‘å¸–å†…å®¹ï¼");
 	}
 	
 	public void setLevel(int level)

@@ -4,11 +4,11 @@ public class Television
 {
 	public void on()
 	{
-		System.out.println("µçÊÓ»ú´ò¿ª£¡");
+		System.out.println("ç”µè§†æœºæ‰“å¼€ï¼");
 	}
 	
 	public void off()
 	{
-		System.out.println("µçÊÓ»ú¹Ø±Õ£¡");	
+		System.out.println("ç”µè§†æœºå…³é—­ï¼");	
 	}
 }

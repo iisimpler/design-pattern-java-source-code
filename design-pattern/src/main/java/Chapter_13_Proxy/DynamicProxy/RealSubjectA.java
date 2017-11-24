@@ -4,6 +4,6 @@ public class RealSubjectA implements AbstractSubject
 {	
 	public void request()
 	{
-		System.out.println("ÕæÊµÖ÷ÌâÀàA£¡");
+		System.out.println("çœŸå®ä¸»é¢˜ç±»Aï¼");
 	}
 }

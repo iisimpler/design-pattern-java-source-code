@@ -2,19 +2,19 @@ package Chapter_09_Composite.sample02;
 
 class Client {
     public static void main(String args[]) {  
-        //Õë¶Ô³éÏó¹¹¼ş±à³Ì  
+        //é’ˆå¯¹æŠ½è±¡æ„ä»¶ç¼–ç¨‹  
         AbstractFile file1,file2,file3,file4,file5,folder1,folder2,folder3,folder4;  
 
-        folder1 = new Folder("SunnyµÄ×ÊÁÏ");  
-        folder2 = new Folder("Í¼ÏñÎÄ¼ş");  
-        folder3 = new Folder("ÎÄ±¾ÎÄ¼ş");  
-        folder4 = new Folder("ÊÓÆµÎÄ¼ş");  
+        folder1 = new Folder("Sunnyçš„èµ„æ–™");  
+        folder2 = new Folder("å›¾åƒæ–‡ä»¶");  
+        folder3 = new Folder("æ–‡æœ¬æ–‡ä»¶");  
+        folder4 = new Folder("è§†é¢‘æ–‡ä»¶");  
 
-        file1 = new ImageFile("Ğ¡ÁúÅ®.jpg");  
-        file2 = new ImageFile("ÕÅÎŞ¼É.gif");  
-        file3 = new TextFile("¾ÅÒõÕæ¾­.txt");  
-        file4 = new TextFile("¿û»¨±¦µä.doc");  
-        file5 = new VideoFile("Ğ¦°Á½­ºş.rmvb");
+        file1 = new ImageFile("å°é¾™å¥³.jpg");  
+        file2 = new ImageFile("å¼ æ— å¿Œ.gif");  
+        file3 = new TextFile("ä¹é˜´çœŸç».txt");  
+        file4 = new TextFile("è‘µèŠ±å®å…¸.doc");  
+        file5 = new VideoFile("ç¬‘å‚²æ±Ÿæ¹–.rmvb");
 
         folder2.add(file1);  
         folder2.add(file2);  
@@ -25,7 +25,7 @@ class Client {
         folder1.add(folder3);  
         folder1.add(folder4);  
 
-        //´Ó¡°SunnyµÄ×ÊÁÏ¡±½Úµã¿ªÊ¼½øĞĞÉ±¶¾²Ù×÷  
+        //ä»â€œSunnyçš„èµ„æ–™â€èŠ‚ç‚¹å¼€å§‹è¿›è¡Œæ€æ¯’æ“ä½œ  
         folder1.killVirus();  
     }  
 }

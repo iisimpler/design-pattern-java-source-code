@@ -4,17 +4,17 @@ public class PrimaryState extends AbstractState {
     public PrimaryState(AbstractState state) {
         this.acc = state.acc;
         this.point = state.getPoint();
-        this.stateName = "新手";
+        this.stateName = "鏂版墜";
     }
 
     public PrimaryState(ForumAccount acc) {
         this.point = 0;
         this.acc = acc;
-        this.stateName = "新手";
+        this.stateName = "鏂版墜";
     }
 
     public void downloadFile(int score) {
-        System.out.println("对不起，" + acc.getName() + "，您没有下载文件的权限！");
+        System.out.println("瀵逛笉璧凤紝" + acc.getName() + "锛屾偍娌℃湁涓嬭浇鏂囦欢鐨勬潈闄愶紒");
     }
 
     public void checkState(int score) {

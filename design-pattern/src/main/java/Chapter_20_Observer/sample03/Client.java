@@ -2,26 +2,26 @@ package Chapter_20_Observer.sample03;
 
 class Client {
     public static void main(String args[]) {
-        //¶¨Òå¹Û²ìÄ¿±ê¶ÔÏó  
+        //å®šä¹‰è§‚å¯Ÿç›®æ ‡å¯¹è±¡  
         AllyControlCenter acc;
-        acc = new ConcreteAllyControlCenter("½ğÓ¹ÈºÏÀ");
+        acc = new ConcreteAllyControlCenter("é‡‘åº¸ç¾¤ä¾ ");
 
-        //¶¨ÒåËÄ¸ö¹Û²ìÕß¶ÔÏó  
+        //å®šä¹‰å››ä¸ªè§‚å¯Ÿè€…å¯¹è±¡  
         Observer player1, player2, player3, player4;
 
-        player1 = new Player("Ñî¹ı");
+        player1 = new Player("æ¨è¿‡");
         acc.join(player1);
 
-        player2 = new Player("Áîºü³å");
+        player2 = new Player("ä»¤ç‹å†²");
         acc.join(player2);
 
-        player3 = new Player("ÕÅÎŞ¼É");
+        player3 = new Player("å¼ æ— å¿Œ");
         acc.join(player3);
 
-        player4 = new Player("¶ÎÓş");
+        player4 = new Player("æ®µèª‰");
         acc.join(player4);
 
-        //Ä³³ÉÔ±ÔâÊÜ¹¥»÷  
+        //æŸæˆå‘˜é­å—æ”»å‡»  
         player1.beAttacked(acc);
     }
 }

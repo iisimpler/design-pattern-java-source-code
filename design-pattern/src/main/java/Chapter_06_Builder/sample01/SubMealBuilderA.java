@@ -5,11 +5,11 @@ public class SubMealBuilderA extends MealBuilder
 	@Override
 	public void buildFood()
 	{
-		meal.setFood("Ò»¸ö¼¦ÍÈ±¤");
+		meal.setFood("ä¸€ä¸ªé¸¡è…¿å ¡");
 	}
 	@Override
 	public void buildDrink()
 	{
-	    meal.setDrink("Ò»±­¿ÉÀÖ");
+	    meal.setDrink("ä¸€æ¯å¯ä¹");
 	}
 }

@@ -6,7 +6,7 @@ public abstract class HookDemo
 	
     public void convertData()
 	{
-		System.out.println("Í¨ÓÃµÄÊı¾İ×ª»»²Ù×÷¡£");
+		System.out.println("é€šç”¨çš„æ•°æ®è½¬æ¢æ“ä½œã€‚");
 	}
 	
 	public abstract void displayData();
@@ -31,12 +31,12 @@ class SubHookDemo extends HookDemo
 {
 	public void getData()
 	{
-		System.out.println("´ÓXMLÅäÖÃÎÄ¼şÖĞ»ñÈ¡Êı¾İ¡£");
+		System.out.println("ä»XMLé…ç½®æ–‡ä»¶ä¸­è·å–æ•°æ®ã€‚");
 	}
 	
 	public void displayData()
 	{
-		System.out.println("ÒÔÖù×´Í¼ÏÔÊ¾Êı¾İ¡£");
+		System.out.println("ä»¥æŸ±çŠ¶å›¾æ˜¾ç¤ºæ•°æ®ã€‚");
 	}
 	
 	public boolean isValid()

@@ -1,8 +1,8 @@
 package Chapter_15_Command.sample02;
 
-//°ïÖúÎÄµµ´¦ÀíÀà£ºÇëÇó½ÓÊÕÕß
+//å¸®åŠ©æ–‡æ¡£å¤„ç†ç±»ï¼šè¯·æ±‚æ¥æ”¶è€…
 public class HelpHandler {
     public void display() {  
-        System.out.println("ÏÔÊ¾°ïÖúÎÄµµ£¡");  
+        System.out.println("æ˜¾ç¤ºå¸®åŠ©æ–‡æ¡£ï¼");  
     }  
 }

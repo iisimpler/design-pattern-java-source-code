@@ -11,11 +11,11 @@ public class Light
 	
 	public void on()
 	{
-		System.out.println(this.position + "�ƴ򿪣�");
+		System.out.println(this.position + "灯打开！");
 	}
 	
 	public void off()
 	{
-		System.out.println(this.position + "�ƹرգ�");	
+		System.out.println(this.position + "灯关闭！");	
 	}
 }

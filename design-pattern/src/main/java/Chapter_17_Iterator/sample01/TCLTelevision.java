@@ -2,7 +2,7 @@ package Chapter_17_Iterator.sample01;
 
 public class TCLTelevision implements Television
 {
-	private Object[] obj={"ºşÄÏÎÀÊÓ","±±¾©ÎÀÊÓ","ÉÏº£ÎÀÊÓ","ºş±±ÎÀÊÓ","ºÚÁú½­ÎÀÊÓ"};
+	private Object[] obj={"æ¹–å—å«è§†","åŒ—äº¬å«è§†","ä¸Šæµ·å«è§†","æ¹–åŒ—å«è§†","é»‘é¾™æ±Ÿå«è§†"};
 	public TVIterator createIterator()
 	{
 		return new TCLIterator();

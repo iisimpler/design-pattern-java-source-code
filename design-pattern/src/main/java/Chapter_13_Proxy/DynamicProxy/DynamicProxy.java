@@ -23,11 +23,11 @@ public class DynamicProxy implements InvocationHandler
     }
 
     public void preRequest(){
-    System.out.println("µ÷ÓÃÖ®Ç°£¡");
+    System.out.println("è°ƒç”¨ä¹‹å‰ï¼");
     }
 
     public void postRequest(){
-    System.out.println("µ÷ÓÃÖ®ºó£¡");
+    System.out.println("è°ƒç”¨ä¹‹åï¼");
     }
 
 }

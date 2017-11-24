@@ -2,11 +2,11 @@ package Chapter_18_Mediator.sample02;
 
 class Client {
     public static void main(String args[]) {
-        //¶¨ÒåÖĞ½éÕß¶ÔÏó  
+        //å®šä¹‰ä¸­ä»‹è€…å¯¹è±¡  
         ConcreteMediator mediator;
         mediator = new ConcreteMediator();
 
-        //¶¨ÒåÍ¬ÊÂ¶ÔÏó  
+        //å®šä¹‰åŒäº‹å¯¹è±¡  
         Button addBT = new Button();
         List list = new List();
         ComboBox cb = new ComboBox();

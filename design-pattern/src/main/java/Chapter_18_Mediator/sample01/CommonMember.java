@@ -6,11 +6,11 @@ public class CommonMember extends Member {
     }
 
     public void sendText(String to, String message) {
-        System.out.println("ÆÕÍ¨»áÔ±·¢ËÍĞÅÏ¢£º");
-        chatroom.sendText(name, to, message);  //·¢ËÍ
+        System.out.println("æ™®é€šä¼šå‘˜å‘é€ä¿¡æ¯ï¼š");
+        chatroom.sendText(name, to, message);  //å‘é€
     }
 
     public void sendImage(String to, String image) {
-        System.out.println("ÆÕÍ¨»áÔ±²»ÄÜ·¢ËÍÍ¼Æ¬£¡");
+        System.out.println("æ™®é€šä¼šå‘˜ä¸èƒ½å‘é€å›¾ç‰‡ï¼");
     }
 }

@@ -1,12 +1,12 @@
 package Chapter_18_Mediator.sample02;
 
-//×éºÏ¿òÀà£º¾ßÌåÍ¬ÊÂÀà
+//ç»„åˆæ¡†ç±»ï¼šå…·ä½“åŒäº‹ç±»
 class ComboBox extends Component {
     public void update() {
-        System.out.println("×éºÏ¿òÔö¼ÓÒ»Ïî£ºÕÅÎŞ¼É¡£");
+        System.out.println("ç»„åˆæ¡†å¢åŠ ä¸€é¡¹ï¼šå¼ æ— å¿Œã€‚");
     }
 
     public void select() {
-        System.out.println("×éºÏ¿òÑ¡ÖĞÏî£ºĞ¡ÁúÅ®¡£");
+        System.out.println("ç»„åˆæ¡†é€‰ä¸­é¡¹ï¼šå°é¾™å¥³ã€‚");
     }
 }  

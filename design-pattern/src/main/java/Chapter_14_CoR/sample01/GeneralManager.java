@@ -11,11 +11,11 @@ public class GeneralManager extends Leader
 	{
 		if(request.getLeaveDays()<30)
 		{
-			System.out.println("×Ü¾­Àí" + name + "ÉóÅúÔ±¹¤" + request.getLeaveName() + "µÄÇë¼ÙÌõ£¬Çë¼ÙÌìÊýÎª" + request.getLeaveDays() + "Ìì¡£");
+			System.out.println("æ€»ç»ç†" + name + "å®¡æ‰¹å‘˜å·¥" + request.getLeaveName() + "çš„è¯·å‡æ¡ï¼Œè¯·å‡å¤©æ•°ä¸º" + request.getLeaveDays() + "å¤©ã€‚");
 		}
 		else
 		{
-			System.out.println("Äª·Ç" + request.getLeaveName() + "Ïë´ÇÖ°£¬¾ÓÈ»Çë¼Ù" + request.getLeaveDays() + "Ìì¡£");
+			System.out.println("èŽ«éž" + request.getLeaveName() + "æƒ³è¾žèŒï¼Œå±…ç„¶è¯·å‡" + request.getLeaveDays() + "å¤©ã€‚");
 		}
 	}
 }

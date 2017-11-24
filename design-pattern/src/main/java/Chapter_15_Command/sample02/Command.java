@@ -1,6 +1,6 @@
 package Chapter_15_Command.sample02;
 
-//³éÏóÃüÁîÀà
+//æŠ½è±¡å‘½ä»¤ç±»
 abstract class Command {  
     public abstract void execute();  
 }  

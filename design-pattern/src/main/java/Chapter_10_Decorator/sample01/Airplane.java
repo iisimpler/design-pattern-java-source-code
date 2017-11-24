@@ -5,11 +5,11 @@ public class Airplane extends Changer
 	public Airplane(Transform transform)
 	{
 		super(transform);
-		System.out.println("±ä³É·É»ú£¡");
+		System.out.println("å˜æˆé£æœºï¼");
 	}
 	
 	public void fly()
 	{
-		System.out.println("ÔÚÌì¿Õ·ÉÏè£¡");	
+		System.out.println("åœ¨å¤©ç©ºé£ç¿”ï¼");	
 	}
 }

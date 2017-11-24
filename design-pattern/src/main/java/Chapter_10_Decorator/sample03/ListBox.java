@@ -1,10 +1,10 @@
 package Chapter_10_Decorator.sample03;
 
-//列表框类：具体构件类
+//鍒楄〃妗嗙被锛氬叿浣撴瀯浠剁被
 public class ListBox extends Component
 {
        public  void display()
        {
-              System.out.println("显示列表框！");
+              System.out.println("鏄剧ず鍒楄〃妗嗭紒");
        }
 }

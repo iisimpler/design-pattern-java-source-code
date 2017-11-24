@@ -3,23 +3,23 @@ package Chapter_19_Memoto.sample02;
 class Client {
     public static void main(String args[]) {  
         MementoCaretaker mc = new MementoCaretaker();  
-        Chessman chess = new Chessman("³µ",1,1);  
+        Chessman chess = new Chessman("è½¦",1,1);  
         display(chess);  
-        mc.setMemento(chess.save()); //±£´æ×´Ì¬       
+        mc.setMemento(chess.save()); //ä¿å­˜çŠ¶æ€       
         chess.setY(4);  
         display(chess);  
-        mc.setMemento(chess.save()); //±£´æ×´Ì¬
+        mc.setMemento(chess.save()); //ä¿å­˜çŠ¶æ€
         chess.setY(8);
         display(chess);
-        mc.setMemento(chess.save()); //±£´æ×´Ì¬
+        mc.setMemento(chess.save()); //ä¿å­˜çŠ¶æ€
         chess.setX(5);  
         display(chess);  
-        System.out.println("******»ÚÆå******");     
-        chess.restore(mc.getMemento()); //»Ö¸´×´Ì¬  
+        System.out.println("******æ‚”æ£‹******");     
+        chess.restore(mc.getMemento()); //æ¢å¤çŠ¶æ€  
         display(chess);
     }  
 
     public static void display(Chessman chess) {  
-        System.out.println("Æå×Ó" + chess.getLabel() + "µ±Ç°Î»ÖÃÎª£º" + "µÚ" + chess.getX() + "ĞĞ" + "µÚ" + chess.getY() + "ÁĞ¡£");  
+        System.out.println("æ£‹å­" + chess.getLabel() + "å½“å‰ä½ç½®ä¸ºï¼š" + "ç¬¬" + chess.getX() + "è¡Œ" + "ç¬¬" + chess.getY() + "åˆ—ã€‚");  
     }  
 }
